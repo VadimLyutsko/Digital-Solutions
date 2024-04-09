@@ -1,0 +1,33 @@
+@import './styles/variables.module.scss';
+
+.app {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 130px 190px;
+
+  @media screen and (max-width: $breakpoint_1600px) {
+    padding: 130px 100px;
+  }
+
+  @media screen and (max-width: $desktop) {
+    padding: 130px 50px;
+  }
+
+  @media screen and (max-width: $breakpoint_1000px) {
+    padding: 75px 0px;
+  }
+
+  @media screen and (max-width: $breakpoint_900px) {
+    gap: 30px;
+  }
+
+  @media screen and (max-width: $table) {
+    gap: 30px;
+  }
+
+  @media screen and (max-width: $breakpoint_600px) {
+    row-gap: 50px;
+  }
+}
