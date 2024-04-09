@@ -1,6 +1,6 @@
 @import '../../styles//variables.module.scss';
 
-.card {
+.card {font-family: "Inter", sans-serif;
   border-radius: 25px;
   padding: 15px 25px;
   max-width: calc((100% - 60px * 3) / 4);
