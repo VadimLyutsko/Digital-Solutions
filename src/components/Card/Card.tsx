@@ -14,7 +14,7 @@ export const Card: React.FC<CardPropsType> = ({id, title, description}) => {
     }
 
     const shadowClasses = clsx(styles.card, {
-        [styles['card_shadow-black']]: true,
+        [styles['card_shadow-black']]: !shadowIsChanged,
         [styles['card_shadow-red']]: shadowIsChanged,
     })
 
